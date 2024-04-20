@@ -1,0 +1,88 @@
+.w-90 {
+  width: 90%;
+}
+
+.my-nav-div .my-nav {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.my-nav .navbar-brand {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.my-nav .nav-link {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  position: relative;
+}
+.my-nav .nav-link::before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 3px solid white;
+  transition: all 0.3s linear;
+}
+.my-nav .active.nav-link::before {
+  width: 70%;
+}
+
+.my-nav .nav-link:hover::before {
+  width: 70%;
+  background-color: tomato;
+}
+
+.my-nav .dropdown-menu {
+  border-radius: 0;
+}
+
+.my-header {
+  background-image: url(../DevFolio\ images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.my-header .bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+h1 {
+  font-weight: 600;
+  font-size: 72px;
+  text-wrap: wrap;
+}
+.my-header span {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+}
+
+.my-info p {
+  font-weight: 600;
+}
+
+.my-about-me h2::after {
+  content: "";
+  border-bottom: #0078ff solid 4px;
+  width: 85px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.my-about-me p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  .my-header span {
+    font-size: 24px;
+  }
+}

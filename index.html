@@ -1,54 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevFolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="my-nav-div fixed-top">
+      <nav class="navbar navbar-expand-lg my-nav navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">DevFolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+              <li class="nav-item ps-4">
+                <a class="nav-link ps-0 active" aria-current="page" href="#"
+                  >Home</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+              <li class="nav-item ps-4">
+                <a class="nav-link ps-0" href="#">About</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item ps-4">
+                <a class="nav-link ps-0" href="#">Services</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <li class="nav-item ps-4">
+                <a class="nav-link ps-0" href="#">Work</a>
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link ps-0" href="#">Blog</a>
+              </li>
+              <li class="nav-item ps-4">
+                <span class="dropdown"
+                  ><a
+                    class="nav-link ps-0 dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item text-capitalize py-2" href="#"
+                        >Drop down 1</a
+                      >
+                    </li>
+                    <div class="dropend text-capitalize">
+                      <a
+                        class="dropdown-item dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside"
+                        aria-expanded="false"
+                      >
+                        Dropend
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">Deep Drop Down</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Deep Drop Down</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Deep Drop Down</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Deep Drop Down</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Deep Drop Down</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <li>
+                      <a class="dropdown-item text-capitalize py-2" href="#"
+                        >Drop down 2</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item text-capitalize py-2" href="#"
+                        >Drop down 3</a
+                      >
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item text-capitalize py-2" href="#"
+                        >Drop down 4</a
+                      >
+                    </li>
+                  </ul>
+                </span>
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link ps-0" href="#">contact</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
+    </div>
+    <div class="my-header vh-100 position-relative">
+      <div class="bg position-absolute top-0 bottom-0 start-0 end-0">
+        <div
+          class="content w-75 position-absolute top-50 start-50 translate-middle"
+        >
+          <h1 class="text-center text-light">I am Morgan Freeman</h1>
+          <p class="text-center text-light">
+            <span id="element" class="d-inline-block text-light"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-about  mx-1 overflow-auto bg-light">
+      <div class="container w-90 my-5 pt-4 mx-auto shadow">
+        <div class="row p-lg-5 p-sm-4 p-3 ">
+          <div class="col-md-6 my-info">
+            <div class="row justify-content-between">
+              <div class="col-xl-3 col-lg-4 col-md-5 col-4">
+                <div class="image rounded overflow-hidden">
+                  <img
+                    class="w-100 m-0"
+                    src="DevFolio images/testimonial-2.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-sm-7  my-info">
+                <p>Name: <span class="fw-normal">Morgan Freeman</span></p>
+                <p>
+                  Profile: <span class="fw-normal">Full Stack Developer</span>
+                </p>
+                <p>Email: <span class="fw-normal">contact@example</span></p>
+                <p>Phone: <span class="fw-normal">(617) 557-0089</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <h4 class="px-2">Skills</h4>
+              <span class="skill p-2">HTML 85%</span>
+              <div
+                class="progress rounded-0 p-0 ms-2 bg-primary-subtle"
+                role="progressbar"
+                aria-label="Example 1px high"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="95"
+                style="height: 10px; width: 95%"
+              >
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>
+              <span class="skill p-2">CSS3 75%</span>
+              <div
+                class="progress rounded-0 p-0 ms-2 bg-primary-subtle"
+                role="progressbar"
+                aria-label="Example 1px high"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="95"
+                style="height: 10px; width: 95%"
+              >
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
+              <span class="skill p-2">PHP 50%</span>
+              <div
+                class="progress rounded-0 p-0 ms-2 bg-primary-subtle"
+                role="progressbar"
+                aria-label="Example 1px high"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="95"
+                style="height: 10px; width: 95%"
+              >
+                <div class="progress-bar" style="width: 50%"></div>
+              </div>
+              <span class="skill p-2">JAVASCRIPT 90%</span>
+              <div
+                class="progress rounded-0 p-0 ms-2 bg-primary-subtle"
+                role="progressbar"
+                aria-label="Example 1px high"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="95"
+                style="height: 10px; width: 95%"
+              >
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-about-me py-md-0 py-5">
+            <div class="row">
+              <h2 class="position-relative px-0 pb-3">About Me</h2>
+              <p class="text-secondary px-0">
+                Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                at sem. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi. Nulla porttitor accumsan tincidunt.
+              </p>
+              <p class="text-secondary px-0">
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Vivamus suscipit tortor eget felis porttitor volutpat.
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                dui. porttitor at sem.
+              </p>
+              <p class="text-secondary px-0">
+                Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium
+                ut lacinia in, elementum id enim. Nulla porttitor accumsan
+                tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh
+                pulvinar a.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
-      <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+
+
+
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Freelancer", "Photographer", "Designer", "Developer"],
+        typeSpeed: 70,
+        backSpeed: 70,
+        backDelay: 2000,
+        loop: true,
+      });
+    </script>
+  </body>
 </html>
