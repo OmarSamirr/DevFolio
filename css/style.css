@@ -72,10 +72,71 @@ h1 {
   left: 0;
 }
 
-.my-about-me p{
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 300;
+.my-about-me p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.my-title span::after {
+  content: "";
+  border-bottom: #0078ff solid 4px;
+  width: 40px;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.my-services .my-title h2 {
+  font-weight: 700;
+  font-size: 48px;
+}
+.my-services .card-body h3 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.my-services .card-body i {
+  font-size: 40px;
+}
+
+.my-services .card-body .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: #0078ff 10px solid;
+  transition: all 0.5s;
+}
+
+.inner:hover .icon {
+  color: white;
+  background-color: #0078ff;
+  border: #cde1f8 10px solid;
+}
+
+.my-numbers {
+  height: 420px;
+  background-image: url(../DevFolio\ images/post-3.jpg);
+  background-size: contain;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.my-numbers .items .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: #cde1f8 10px solid;
 }
 
 @media screen and (max-width: 768px) {
@@ -84,5 +145,10 @@ h1 {
   }
   .my-header span {
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .my-numbers {
+    height: 200vh;
   }
 }
