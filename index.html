@@ -9,8 +9,12 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <div class="my-nav-div fixed-top">
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-smoothScorll="true"
+  >
+    <div id="navbar" class="my-nav-div fixed-top">
       <nav class="navbar navbar-expand-lg my-nav navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="#">DevFolio</a>
@@ -28,21 +32,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
               <li class="nav-item ps-4">
-                <a class="nav-link ps-0 active" aria-current="page" href="#"
+                <a class="nav-link ps-0 active" aria-current="page" href="#home"
                   >Home</a
                 >
               </li>
               <li class="nav-item ps-4">
-                <a class="nav-link ps-0" href="#">About</a>
+                <a class="nav-link ps-0" href="#about">About</a>
               </li>
               <li class="nav-item ps-4">
-                <a class="nav-link ps-0" href="#">Services</a>
+                <a class="nav-link ps-0" href="#services">Services</a>
               </li>
               <li class="nav-item ps-4">
-                <a class="nav-link ps-0" href="#">Work</a>
+                <a class="nav-link ps-0" href="#portfolio">Work</a>
               </li>
               <li class="nav-item ps-4">
-                <a class="nav-link ps-0" href="#">Blog</a>
+                <a class="nav-link ps-0" href="#blog">Blog</a>
               </li>
               <li class="nav-item ps-4">
                 <span class="dropdown"
@@ -113,7 +117,7 @@
                 </span>
               </li>
               <li class="nav-item ps-4">
-                <a class="nav-link ps-0" href="#">contact</a>
+                <a class="nav-link ps-0" href="#contact">contact</a>
               </li>
             </ul>
           </div>
@@ -121,7 +125,7 @@
       </nav>
     </div>
 
-    <div class="my-header vh-100 position-relative">
+    <div id="home" class="my-header vh-100 position-relative">
       <div class="bg position-absolute top-0 bottom-0 start-0 end-0">
         <div
           class="content w-75 position-absolute top-50 start-50 translate-middle"
@@ -134,7 +138,7 @@
       </div>
     </div>
 
-    <div class="my-about mx-1 overflow-auto bg-light">
+    <div id="about" class="my-about mx-1 overflow-auto bg-light">
       <div class="container w-90 my-5 pt-4 mx-auto shadow">
         <div class="row p-lg-5 p-sm-4 p-3">
           <div class="col-md-6 my-info">
@@ -236,7 +240,7 @@
       </div>
     </div>
 
-    <div class="my-services overflow-auto bg-light">
+    <div id="services" class="my-services overflow-auto bg-light">
       <div class="my-title text-center my-5">
         <h2 class="text-uppercase">Services</h2>
         <span class="position-relative pb-3"
@@ -387,7 +391,7 @@
       </div>
     </div>
 
-    <div class="my-portfolio bg-light pt-3 overflow-auto">
+    <div id="portfolio" class="my-portfolio bg-light pt-3 overflow-auto">
       <div class="my-title text-center my-5">
         <h2 class="text-uppercase">Portfolio</h2>
         <span class="position-relative pb-3"
@@ -582,30 +586,6 @@
                 </p>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
             <div class="carousel-indicators position-static">
               <button
                 type="button"
@@ -627,7 +607,7 @@
       </div>
     </div>
 
-    <div class="my-blog">
+    <div id="blog" class="my-blog">
       <div class="my-title text-center my-5">
         <h2 class="text-uppercase">blog</h2>
         <span class="position-relative pb-3"
@@ -756,7 +736,7 @@
       </div>
     </div>
 
-    <div class="my-form">
+    <div id="contact" class="my-form">
       <div
         class="container-fluid overflow-auto position-relative h-100 d-flex align-items-center"
       >
@@ -827,19 +807,23 @@
                 </ul>
               </div>
               <div class="links">
-                <a href="#"
+                <a
+                  href="#"
                   class="rounded-circle d-inline-flex justify-content-center align-items-center p-2"
                   ><i class="fa-brands fa-facebook"></i
                 ></a>
-                <a href="#"
+                <a
+                  href="#"
                   class="rounded-circle d-inline-flex justify-content-center align-items-center p-2"
                   ><i class="fa-brands fa-instagram"></i
                 ></a>
-                <a href="#"
+                <a
+                  href="#"
                   class="rounded-circle d-inline-flex justify-content-center align-items-center p-2"
                   ><i class="fa-brands fa-twitter"></i
                 ></a>
-                <a href="#"
+                <a
+                  href="#"
                   class="rounded-circle d-inline-flex justify-content-center align-items-center p-2"
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
@@ -851,9 +835,10 @@
     </div>
 
     <footer class="overflow-auto shadow">
-      <p class="m-0 text-center mx-auto text-white p-4">© Copyright <strong>DevFolio</strong>. All Rights Reserved
-
-        Designed by BootstrapMade</p>
+      <p class="m-0 text-center mx-auto text-white p-4">
+        © Copyright <strong>DevFolio</strong>. All Rights Reserved Designed by
+        BootstrapMade
+      </p>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
