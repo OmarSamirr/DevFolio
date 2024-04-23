@@ -63,7 +63,7 @@ h1 {
   font-weight: 600;
 }
 
-.my-about-me h2::after {
+:is(.my-about-me, .my-form) h2::after {
   content: "";
   border-bottom: #0078ff solid 4px;
   width: 85px;
@@ -89,7 +89,7 @@ h1 {
   transform: translateX(-50%);
 }
 
-.my-services .my-title h2 {
+:is(.my-services, .my-portfolio, .my-blog) .my-title h2 {
   font-weight: 700;
   font-size: 48px;
 }
@@ -114,7 +114,7 @@ h1 {
   transition: all 0.5s;
 }
 
-.inner:hover .icon {
+.inner:hover .icon{
   color: white;
   background-color: #0078ff;
   border: #cde1f8 10px solid;
@@ -139,6 +139,109 @@ h1 {
   border: #cde1f8 10px solid;
 }
 
+.my-portfolio .card-body span {
+  font-size: 12px;
+}
+.my-portfolio .card-body .add {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  text-decoration: none;
+}
+.my-portfolio .card img {
+  transition: all 1s;
+}
+.my-portfolio .image {
+  overflow: hidden;
+}
+
+.my-portfolio .card:hover img {
+  scale: 1.2;
+}
+
+.my-slider .image {
+  width: 150px;
+  margin: auto;
+}
+
+.my-slider {
+  height: 85vh;
+  background-image: url(../DevFolio\ images/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.my-blog .my-work .list-group img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.my-blog .my-work :is(a, i, span) {
+  color: #4e4e4e;
+  text-decoration: none;
+  transition: all 1s;
+}
+.blue-title {
+  top: -15px;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.my-blog .my-work a:hover {
+  color: #0078ff;
+}
+
+.my-form {
+  background-image: url(../DevFolio\ images/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+ul, li{
+  list-style-type: none;
+  padding: 5px 0;
+}
+.my-form .icon{
+  margin-right: 10px;
+}
+
+.my-form .links a:hover {
+  color: white;
+  background-color: #0078ff;
+  border: #cde1f8 4px solid;
+}
+
+.my-form .links a{
+  transition: all 0.5s;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  border: #0078ff 4px solid;
+}
+
+footer{
+  background-color: #0062D3;
+  box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
+}
+
+footer p{
+  width: 320px;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 48px;
@@ -149,6 +252,6 @@ h1 {
 }
 @media screen and (max-width: 576px) {
   .my-numbers {
-    height: 200vh;
+    height: 840px;
   }
 }
