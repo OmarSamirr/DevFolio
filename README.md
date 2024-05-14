@@ -1,3 +1,1 @@
-# DevFolio
-
-A personal website portofolio
+link: https://omarsamirr.github.io/DevFolio/
